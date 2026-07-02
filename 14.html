@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      box-sizing: border-box;
+      transition: 1s;
+    }
+
+    img {
+      max-width: 276px;
+      max-height: 360px;
+      /* 讓圖片置中 */
+      display: block;
+      margin: auto;
+    }
+
+    hr {
+      width: 100%;
+      border: 1px solid gray;
+      margin-top: 15px;
+    }
+
+    .container {
+      width: 100%;
+      padding: 0 15px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      position: relative;
+    }
+
+    .col {
+      width: 100%;
+      padding: 15px;
+      margin: 1.5% 0;
+    }
+
+    .col:nth-child(1) {
+      text-align: center;
+    }
+
+    @media(min-width: 992px) {
+      .row {
+        width: 1140px;
+        height: 600px;
+        margin: 0 auto;
+      }
+
+      .col2,
+      .col3,
+      .col4,
+      .col5,
+      .col6,
+      .col7,
+      .col8 {
+        width: 150px;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      p {
+        display: none;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      hr {
+        display: none;
+      }
+
+      /* 泰山 */
+      .col1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: calc(276px + 30px);
+        height: 360px;
+
+        p {
+          display: block;
+        }
+
+        hr {
+          display: none;
+        }
+      }
+
+      /* CSS */
+      .col2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) translate(-255px, -227px);
+
+        hr {
+          display: block;
+          position: absolute;
+          top: 78%;
+          left: 71%;
+          width: 104px;
+          transform: rotate(40deg);
+        }
+      }
+
+      /* Html */
+      .col3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) translate(-476px, -203px);
+
+        hr {
+          display: block;
+          position: absolute;
+          top: 90%;
+          left: 77%;
+          width: 291px;
+          transform: rotate(21deg);
+        }
+      }
+
+      /* JS */
+      .col4 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) translate(-430px, 30px);
+
+        hr {
+          display: block;
+          position: absolute;
+          top: 40%;
+          left: 93%;
+          width: 221px;
+          transform: rotate(-5deg);
+        }
+      }
+
+      /* Jq */
+      .col5 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) translate(-295px, 185px);
+
+        hr {
+          display: block;
+          position: absolute;
+          top: 2%;
+          left: 86%;
+          width: 128px;
+          transform: rotate(150deg);
+        }
+      }
+
+      /* bs */
+      .col6 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) translate(345px, -230px);
+
+        hr {
+          display: block;
+          position: absolute;
+          top: 78%;
+          left: -98%;
+          width: 172px;
+          transform: rotate(155deg);
+        }
+      }
+
+      /* Sass */
+      .col7 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) translate(450px, -62px);
+
+        hr {
+          display: block;
+          position: absolute;
+          top: 54%;
+          left: -151%;
+          width: 228px;
+          transform: rotate(-10deg);
+        }
+      }
+
+      /* Vue */
+      .col8 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) translate(375px, 180px);
+
+        hr {
+          display: block;
+          position: absolute;
+          top: 1%;
+          left: -124%;
+          width: 215px;
+          transform: rotate(-150deg);
+        }
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col col1">
+        <img src="./images/wda.png">
+        <h1>泰山職訓局</h1>
+        <h2>從零開始的網頁設計課程</h2>
+        <p>
+          轉職網頁開發人員　掌握就業必備職能<br>
+          由淺入深學習技術　強化職場的競爭力
+        </p>
+        <hr>
+      </div>
+      <div class="col col2">
+        <img src="./images/css.png">
+        <h2>CSS3</h2>
+        <p>
+          層疊樣式表（英語：Cascading Style Sheets，簡寫CSS），又稱串樣式列表、級聯樣式表、串接樣式表、階層式樣式表，一種用來為結構化文件（如 HTML 文件或 XML
+          應用）添加樣式（字型、間距和顏色等）的電腦語言，由 W3C 定義和維護。目前最新版本是 CSS2.1，為 W3C 的推薦標準。CSS3 現在已被大部分現代瀏覽器支援，而下一版的 CSS4 仍在開發中。
+        </p>
+        <hr>
+      </div>
+      <div class="col col3">
+        <img src="./images/html.png">
+        <h2>Html</h2>
+        <p>
+          超文本標記語言（英語：HyperText Markup Language，簡稱：HTML）是一種用於建立網頁的標準標記語言。 HTML 是一種基礎技術，常與 CSS、JavaScript
+          一起被眾多網站用於設計賞心悅目的網頁、網頁應用程式以及行動應用程式的使用者介面。網頁瀏覽器可以讀取 HTML 檔案，並將其彩現成視覺化網頁。HTML
+          描述了一個網站的結構語意隨著線索的呈現，使之成為一種標記語言而非程式語言。
+        </p>
+        <hr>
+      </div>
+      <div class="col col4">
+        <img src="./images/js.png">
+        <h2>JavaScript</h2>
+        <p>
+          JavaScript，通常縮寫為 JS，是一種進階直譯語言的程式語言。JavaScript 是一門基於原型、函式先行的語言，是一門多範式的語言，它支援物件導向編程，指令式程式設計，以及函式語言程式設計。
+        </p>
+        <hr>
+      </div>
+      <div class="col col5">
+        <img src="./images/jq.png">
+        <h2>jQuery</h2>
+        <p>
+          jQuery 是一套跨瀏覽器的 JavaScript 函式庫，簡化 HTML 與 JavaScript 之間的操作。全球前 10,000 個存取最高的網站中，有 65% 使用了jQuery，是目前最受歡迎的
+          JavaScript 函式庫。
+        </p>
+        <hr>
+      </div>
+      <div class="col col6">
+        <img src="./images/bs.png">
+        <h2>Bootstrap</h2>
+        <p>
+          Bootstrap 是一組用於網站和網路應用程式開發的開源前端（所謂「前端」，指的是展現給終端使用者的介面。與之對應的「後端」是在伺服器上面執行的程式碼）框架，包括 HTML、CSS及JavaScript
+          的框架，提供字體排印、表單、按鈕、導航及其他各種元件及 Javascript 擴充套件，旨在使動態網頁和 Web 應用的開發更加容易。
+        </p>
+        <hr>
+      </div>
+      <div class="col col7">
+        <img src="./images/sass.png">
+        <h2>Sass</h2>
+        <p>
+          軟體即服務（英語：Software as a
+          Service，縮寫：SaaS），亦可稱為「按需即用軟體」（即「一經要求，即可使用」），它是一種軟體交付模式。在這種交付模式中，軟體僅需通過網路，不須經過傳統的安裝步驟即可使用，軟體及其相關的資料集中代管於雲端服務。使用者通常使用精簡客戶端，一般即經由網頁瀏覽器來訪問、存取軟體即服務。SaaS
+          最大的特色在於軟體本身並沒有被下載到使用者的硬碟，而是儲存在提供商的雲端或者伺服器。相較於傳統軟體需要花錢購買和下載，軟體即服務只需要使用者租用軟體，線上使用，不但大大減少了使用者購買風險,
+          也無需下載軟體本身，無裝置要求的限制。
+        </p>
+        <hr>
+      </div>
+      <div class="col col8">
+        <img src="./images/vue.png">
+        <h2>Vue.js</h2>
+        <p>
+          Vue.js是一款JavaScript前端框架，旨在更好地組織與簡化Web開發。Vue所關注的核心是MVC模式中的視圖層，同時，它也能方便地取得資料更新，並通過組件內部特定的方法實現視圖與模型的互動。
+        </p>
+        <hr>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
